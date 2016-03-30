@@ -1,0 +1,625 @@
+\hypertarget{classed_1_1Polinomio}{\section{ed\-:\-:Polinomio Class Reference}
+\label{classed_1_1Polinomio}\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}}
+}
+
+
+Definición de la clase \hyperlink{classed_1_1Polinomio}{Polinomio}.  
+
+
+
+
+{\ttfamily \#include $<$polinomio.\-hpp$>$}
+
+Inheritance diagram for ed\-:\-:Polinomio\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classed_1_1Polinomio}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Atributos publicos de la clase Polinomio}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classed_1_1Polinomio_ad2a480e2e09d0afa8f58907f5460a357}{Polinomio} (\hyperlink{classed_1_1Polinomio}{Polinomio} const \&p)
+\begin{DoxyCompactList}\small\item\em Contructor que crea un polinomio a partir de otro polinomio pasado por referencia. \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Polinomio_ab357d5df6da0d216f079f485937b6266}{Polinomio} (int grado=0, int terminos=0, int n=0)
+\begin{DoxyCompactList}\small\item\em Contructor que crea un polinomio a partir del grado, los terminos y el numero de terminos. \end{DoxyCompactList}\item 
+int \hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el grado del polinomio. \end{DoxyCompactList}\item 
+int \hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el numero de terminos de un polinomio. \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Monomio}{Monomio} \hyperlink{classed_1_1Polinomio_ac2b20ed929a98c449c635cc70dc82f20}{get\-Monomio} (const int i) const 
+\begin{DoxyCompactList}\small\item\em Devuelve el monomio del polinomio. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classed_1_1Monomio}{Monomio} $>$ \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el polinomio. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{set\-Terminos} (const int \&terminos)
+\begin{DoxyCompactList}\small\item\em Asigna un valor \char`\"{}terminos\char`\"{} al numero de terminos de un polinomio. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado} (const int \&grado)
+\begin{DoxyCompactList}\small\item\em Asigna un valor \char`\"{}grado\char`\"{} al grado de un polinomio. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{set\-Polinomio} (const vector$<$ \hyperlink{classed_1_1Monomio}{Monomio} $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Asigna un polinomio. \end{DoxyCompactList}\item 
+bool \hyperlink{classed_1_1Polinomio_a1a2237c522e6e6907d119d77dcc4aca5}{test\-Polinomio} ()
+\begin{DoxyCompactList}\small\item\em Comprueba si un polinomio esta vacio. \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Polinomio}{Polinomio} \& \hyperlink{classed_1_1Polinomio_a324b06e0f0f9fde61625ca4a912962cc}{operator=} (\hyperlink{classed_1_1Polinomio}{Polinomio} const \&p)
+\begin{DoxyCompactList}\small\item\em /name Operadores \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Polinomio}{Polinomio} \hyperlink{classed_1_1Polinomio_a71d8e6f2a66622de636cac0b46609164}{operator+} (\hyperlink{classed_1_1Polinomio}{Polinomio} const \&p)
+\begin{DoxyCompactList}\small\item\em Operador de suma de dos polinomios. \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Polinomio}{Polinomio} \hyperlink{classed_1_1Polinomio_a547d6a82646d52dc7c950fef254c275c}{operator$\ast$} (\hyperlink{classed_1_1Polinomio}{Polinomio} const \&p)
+\begin{DoxyCompactList}\small\item\em Operador de producto de dos polinomios. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Polinomio_a7d264883d3fc0ba0b72c8c68fb55ca13}{calcular\-Grado} ()
+\begin{DoxyCompactList}\small\item\em Calcula el grado de un \hyperlink{classed_1_1Polinomio}{Polinomio} y se lo asigna. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Polinomio_ada80935d3e99914906c46592d6efdcd4}{leer\-Polinomio} ()
+\begin{DoxyCompactList}\small\item\em Lee los valores de un polinomio por pantalla y se los asigna al \hyperlink{classed_1_1Polinomio}{Polinomio}. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Polinomio_ad8c9a4ff8fd9253e42dfaa4a6ced9409}{escribir\-Polinomio} ()
+\begin{DoxyCompactList}\small\item\em Escribe los valores de un polinomio por pantalla. \end{DoxyCompactList}\item 
+double \hyperlink{classed_1_1Polinomio_ab2997b1a2b83727ac96fea969b69f3c7}{valor\-Polinomio} (double x)
+\begin{DoxyCompactList}\small\item\em Calcula el valor de un polinomio dado un valor. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classed_1_1Monomio}{Monomio} $>$ \hyperlink{classed_1_1Polinomio_a58c42d9ddeaf9d4a3776af389809e2a9}{suma\-Vector} (vector$<$ \hyperlink{classed_1_1Monomio}{Monomio} $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Suma los monomios de un vector dado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{Indent}{\bf Funciones amigas para poder acceder a la parte privada de Monomio}\par
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classed_1_1Polinomio_a3f44b3043aa98d5a670c6a23cd0a6db7}{operator$<$$<$} (ostream \&stream, \hyperlink{classed_1_1Polinomio}{Polinomio} const \&p)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de salida \char`\"{}$<$$<$\char`\"{}. \end{DoxyCompactList}\item 
+istream \& \hyperlink{classed_1_1Polinomio_a11359b914d66503eb5a0a15c1983b068}{operator$>$$>$} (istream \&stream, \hyperlink{classed_1_1Polinomio}{Polinomio} \&p)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de entrada \char`\"{}$>$$>$\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Definición de la clase \hyperlink{classed_1_1Polinomio}{Polinomio}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classed_1_1Polinomio_ad2a480e2e09d0afa8f58907f5460a357}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!Polinomio@{Polinomio}}
+\index{Polinomio@{Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}ed\-::\-Polinomio\-::\-Polinomio (
+\begin{DoxyParamCaption}
+\item[{{\bf Polinomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Polinomio_ad2a480e2e09d0afa8f58907f5460a357}
+
+
+Contructor que crea un polinomio a partir de otro polinomio pasado por referencia. 
+
+\begin{DoxyAttention}{Attention}
+Función sobrecargada 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classed_1_1Polinomio}{Polinomio}, \hyperlink{classed_1_1Polinomio}{Polinomio} pasado por referencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Ninguna 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado()}, \hyperlink{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{set\-Terminos()}, \hyperlink{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{set\-Polinomio()}, \hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado()}, \hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos()}, \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Polinomio_ab357d5df6da0d216f079f485937b6266}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!Polinomio@{Polinomio}}
+\index{Polinomio@{Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}ed\-::\-Polinomio\-::\-Polinomio (
+\begin{DoxyParamCaption}
+\item[{int}]{grado = {\ttfamily 0}, }
+\item[{int}]{terminos = {\ttfamily 0}, }
+\item[{int}]{n = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Polinomio_ab357d5df6da0d216f079f485937b6266}
+
+
+Contructor que crea un polinomio a partir del grado, los terminos y el numero de terminos. 
+
+\begin{DoxyAttention}{Attention}
+Función sobrecargada 
+\end{DoxyAttention}
+\begin{DoxyNote}{Note}
+Los parámetros tienen valores por defecto 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em grado} & int, valor por defecto 0.\-0 \\
+\hline
+{\em terminos} & int, valor por defecto 0 \\
+\hline
+{\em n} & int, valor por defecto 0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Ninguna 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado()}, \hyperlink{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{set\-Terminos()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classed_1_1Polinomio_a7d264883d3fc0ba0b72c8c68fb55ca13}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!calcular\-Grado@{calcular\-Grado}}
+\index{calcular\-Grado@{calcular\-Grado}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{calcular\-Grado}]{\setlength{\rightskip}{0pt plus 5cm}void Polinomio\-::calcular\-Grado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Polinomio_a7d264883d3fc0ba0b72c8c68fb55ca13}
+
+
+Calcula el grado de un \hyperlink{classed_1_1Polinomio}{Polinomio} y se lo asigna. 
+
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+El grado del polinomio queda modificado 
+\end{DoxyPostcond}
+\hypertarget{classed_1_1Polinomio_ad8c9a4ff8fd9253e42dfaa4a6ced9409}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!escribir\-Polinomio@{escribir\-Polinomio}}
+\index{escribir\-Polinomio@{escribir\-Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{escribir\-Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}void Polinomio\-::escribir\-Polinomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Polinomio_ad8c9a4ff8fd9253e42dfaa4a6ced9409}
+
+
+Escribe los valores de un polinomio por pantalla. 
+
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\hypertarget{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!get\-Grado@{get\-Grado}}
+\index{get\-Grado@{get\-Grado}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{get\-Grado}]{\setlength{\rightskip}{0pt plus 5cm}int ed\-::\-Polinomio\-::get\-Grado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}
+
+
+Devuelve el grado del polinomio. 
+
+\begin{DoxyReturn}{Returns}
+Grado de un polinomio 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir anteriormente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos()}, \hyperlink{classed_1_1Polinomio_ac2b20ed929a98c449c635cc70dc82f20}{get\-Monomio()}, \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_ac2b20ed929a98c449c635cc70dc82f20}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!get\-Monomio@{get\-Monomio}}
+\index{get\-Monomio@{get\-Monomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{get\-Monomio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Monomio} ed\-::\-Polinomio\-::get\-Monomio (
+\begin{DoxyParamCaption}
+\item[{const int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_ac2b20ed929a98c449c635cc70dc82f20}
+
+
+Devuelve el monomio del polinomio. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classed_1_1Monomio}{Monomio} de un polinomio 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & int, posicion del monomio a devolver \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir anteriormente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos()}, \hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado()}, \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!get\-Polinomio@{get\-Polinomio}}
+\index{get\-Polinomio@{get\-Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{get\-Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Monomio}$>$ ed\-::\-Polinomio\-::get\-Polinomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_a80086e21883c1108260006302135eade}
+
+
+Devuelve el polinomio. 
+
+\begin{DoxyReturn}{Returns}
+polinomio de monomios 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir anteriormente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos()}, \hyperlink{classed_1_1Polinomio_ac2b20ed929a98c449c635cc70dc82f20}{get\-Monomio()}, \hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!get\-Terminos@{get\-Terminos}}
+\index{get\-Terminos@{get\-Terminos}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{get\-Terminos}]{\setlength{\rightskip}{0pt plus 5cm}int ed\-::\-Polinomio\-::get\-Terminos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}
+
+
+Devuelve el numero de terminos de un polinomio. 
+
+\begin{DoxyReturn}{Returns}
+Terminos de un polinomio 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir anteriormente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado()}, \hyperlink{classed_1_1Polinomio_ac2b20ed929a98c449c635cc70dc82f20}{get\-Monomio()}, \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_ada80935d3e99914906c46592d6efdcd4}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!leer\-Polinomio@{leer\-Polinomio}}
+\index{leer\-Polinomio@{leer\-Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{leer\-Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}void Polinomio\-::leer\-Polinomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Polinomio_ada80935d3e99914906c46592d6efdcd4}
+
+
+Lee los valores de un polinomio por pantalla y se los asigna al \hyperlink{classed_1_1Polinomio}{Polinomio}. 
+
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+El polinomio es modificado 
+\end{DoxyPostcond}
+\hypertarget{classed_1_1Polinomio_a547d6a82646d52dc7c950fef254c275c}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Polinomio} ed\-::\-Polinomio\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Polinomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Polinomio_a547d6a82646d52dc7c950fef254c275c}
+
+
+Operador de producto de dos polinomios. 
+
+\begin{DoxyAttention}{Attention}
+Se sobrecarga el operador de suma 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classed_1_1Polinomio}{Polinomio} pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Producto de dos polinomios 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado()}, \hyperlink{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{set\-Terminos()}, \hyperlink{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{set\-Polinomio()}, \hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado()}, \hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos()}, \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Polinomio_a71d8e6f2a66622de636cac0b46609164}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!operator+@{operator+}}
+\index{operator+@{operator+}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Polinomio} ed\-::\-Polinomio\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Polinomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Polinomio_a71d8e6f2a66622de636cac0b46609164}
+
+
+Operador de suma de dos polinomios. 
+
+\begin{DoxyAttention}{Attention}
+Se sobrecarga el operador de suma 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classed_1_1Polinomio}{Polinomio} pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Suma de dos polinomios 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado()}, \hyperlink{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{set\-Terminos()}, \hyperlink{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{set\-Polinomio()}, \hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado()}, \hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos()}, \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Polinomio_a324b06e0f0f9fde61625ca4a912962cc}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!operator=@{operator=}}
+\index{operator=@{operator=}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Polinomio}\& ed\-::\-Polinomio\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Polinomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Polinomio_a324b06e0f0f9fde61625ca4a912962cc}
+
+
+/name Operadores 
+
+Operador de copia de un polinomio en otro \begin{DoxyAttention}{Attention}
+Se sobrecarga el operador de asignacion 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classed_1_1Polinomio}{Polinomio} pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado()}, \hyperlink{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{set\-Terminos()}, \hyperlink{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{set\-Polinomio()}, \hyperlink{classed_1_1Polinomio_a6652a2361f03daf45b38a97e8b146d15}{get\-Grado()}, \hyperlink{classed_1_1Polinomio_a9c54328800c74a91e04cb22f968e7510}{get\-Terminos()}, \hyperlink{classed_1_1Polinomio_a80086e21883c1108260006302135eade}{get\-Polinomio()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!set\-Grado@{set\-Grado}}
+\index{set\-Grado@{set\-Grado}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{set\-Grado}]{\setlength{\rightskip}{0pt plus 5cm}void ed\-::\-Polinomio\-::set\-Grado (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{grado}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}
+
+
+Asigna un valor \char`\"{}grado\char`\"{} al grado de un polinomio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grado} & int pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{set\-Terminos()}, \hyperlink{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{set\-Polinomio()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!set\-Polinomio@{set\-Polinomio}}
+\index{set\-Polinomio@{set\-Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{set\-Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}void ed\-::\-Polinomio\-::set\-Polinomio (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Monomio} $>$ \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}
+
+
+Asigna un polinomio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & vector $<$\-Monomio$>$ pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado()}, set\-Terminos(1) 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!set\-Terminos@{set\-Terminos}}
+\index{set\-Terminos@{set\-Terminos}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{set\-Terminos}]{\setlength{\rightskip}{0pt plus 5cm}void ed\-::\-Polinomio\-::set\-Terminos (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{terminos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_acf2aa0cc5b63144eeffc603e6de0d9a3}
+
+
+Asigna un valor \char`\"{}terminos\char`\"{} al numero de terminos de un polinomio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminos} & int pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Polinomio_a2387bb72b00d6d62daac94a27129d1fe}{set\-Grado()}, \hyperlink{classed_1_1Polinomio_a76864a912e2301a813c08a51b743fa26}{set\-Polinomio()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_a58c42d9ddeaf9d4a3776af389809e2a9}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!suma\-Vector@{suma\-Vector}}
+\index{suma\-Vector@{suma\-Vector}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{suma\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Monomio} $>$ Polinomio\-::suma\-Vector (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Monomio} $>$ \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Polinomio_a58c42d9ddeaf9d4a3776af389809e2a9}
+
+
+Suma los monomios de un vector dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & vector $<$\-Monomio$>$, vector que se debe sumar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classed_1_1Polinomio}{Polinomio} sumado 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El vector debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\hypertarget{classed_1_1Polinomio_a1a2237c522e6e6907d119d77dcc4aca5}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!test\-Polinomio@{test\-Polinomio}}
+\index{test\-Polinomio@{test\-Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{test\-Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}bool ed\-::\-Polinomio\-::test\-Polinomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Polinomio_a1a2237c522e6e6907d119d77dcc4aca5}
+
+
+Comprueba si un polinomio esta vacio. 
+
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+
+
+Implements \hyperlink{classed_1_1PolinomioInterfaz}{ed\-::\-Polinomio\-Interfaz}.
+
+\hypertarget{classed_1_1Polinomio_ab2997b1a2b83727ac96fea969b69f3c7}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!valor\-Polinomio@{valor\-Polinomio}}
+\index{valor\-Polinomio@{valor\-Polinomio}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{valor\-Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}double Polinomio\-::valor\-Polinomio (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Polinomio_ab2997b1a2b83727ac96fea969b69f3c7}
+
+
+Calcula el valor de un polinomio dado un valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & double, valor para calcular el polinomio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor del polinomio 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El polinomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classed_1_1Polinomio_a3f44b3043aa98d5a670c6a23cd0a6db7}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{stream, }
+\item[{{\bf Polinomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classed_1_1Polinomio_a3f44b3043aa98d5a670c6a23cd0a6db7}
+
+
+Sobrecarga del operador de salida \char`\"{}$<$$<$\char`\"{}. 
+
+\begin{DoxyAttention}{Attention}
+Funcion amiga de la clase \hyperlink{classed_1_1Polinomio}{Polinomio} 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & ostream, flujo de salida \\
+\hline
+{\em p} & \hyperlink{classed_1_1Polinomio}{Polinomio}, pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El \hyperlink{classed_1_1Polinomio}{Polinomio} debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se escribe por pantalla el \hyperlink{classed_1_1Polinomio}{Polinomio} 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+operator $>$$>$ 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Polinomio_a11359b914d66503eb5a0a15c1983b068}{\index{ed\-::\-Polinomio@{ed\-::\-Polinomio}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!ed::Polinomio@{ed\-::\-Polinomio}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{stream, }
+\item[{{\bf Polinomio} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classed_1_1Polinomio_a11359b914d66503eb5a0a15c1983b068}
+
+
+Sobrecarga del operador de entrada \char`\"{}$>$$>$\char`\"{}. 
+
+\begin{DoxyAttention}{Attention}
+Funcion amiga de la clase \hyperlink{classed_1_1Polinomio}{Polinomio} 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & istream, flujo de entrada \\
+\hline
+{\em p} & \hyperlink{classed_1_1Polinomio}{Polinomio}, pasado por referencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El \hyperlink{classed_1_1Polinomio}{Polinomio} debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se le asignan los valores al polinomio 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+operator $<$$<$ 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+polinomio.\-hpp\item 
+polinomio.\-cpp\end{DoxyCompactItemize}

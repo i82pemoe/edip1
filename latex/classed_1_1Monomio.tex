@@ -1,0 +1,433 @@
+\hypertarget{classed_1_1Monomio}{\section{ed\-:\-:Monomio Class Reference}
+\label{classed_1_1Monomio}\index{ed\-::\-Monomio@{ed\-::\-Monomio}}
+}
+
+
+Definición de la clase \hyperlink{classed_1_1Monomio}{Monomio}.  
+
+
+
+
+{\ttfamily \#include $<$monomio.\-hpp$>$}
+
+Inheritance diagram for ed\-:\-:Monomio\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classed_1_1Monomio}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Constructores de la clase Monomio}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classed_1_1Monomio_ac11803dda1ae569b9ca4771187c9610a}{Monomio} (double coef=0.\-0, int grado=0)
+\begin{DoxyCompactList}\small\item\em Contructor que crea un monomio a partir del coeficiente y del grado. \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Monomio_a29ea5f824f31a241f2479ec40b60f0bd}{Monomio} (\hyperlink{classed_1_1Monomio}{Monomio} const \&p)
+\begin{DoxyCompactList}\small\item\em Contructor que crea un monomio a partir de otro monomio pasado por referencia. \end{DoxyCompactList}\item 
+double \hyperlink{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{get\-Coeficiente} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el coeficiente de un monomio. \end{DoxyCompactList}\item 
+int \hyperlink{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{get\-Grado} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el grado de un monomio. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{set\-Coeficiente} (const double \&coeficiente)
+\begin{DoxyCompactList}\small\item\em Asigna un valor \char`\"{}coeficiente\char`\"{} al coeficiente de un monomio. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{set\-Grado} (const int \&grado)
+\begin{DoxyCompactList}\small\item\em Asigna un valor \char`\"{}grado\char`\"{} al grado de un monomio. \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Monomio}{Monomio} \& \hyperlink{classed_1_1Monomio_a45103846ab828a1d4ff54cd723e14658}{operator=} (\hyperlink{classed_1_1Monomio}{Monomio} const \&p)
+\begin{DoxyCompactList}\small\item\em /name Operadores \end{DoxyCompactList}\item 
+\hyperlink{classed_1_1Monomio}{Monomio} \hyperlink{classed_1_1Monomio_a91a18ac215d83c32ab2803963441f79d}{operator$\ast$} (\hyperlink{classed_1_1Monomio}{Monomio} const \&p)
+\begin{DoxyCompactList}\small\item\em Operador producto de dos monomios. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Funciones lectura y escritura de la clase Punto2\-D}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classed_1_1Monomio_a1d3ec4190c5e23d93eff79ad8e9486c0}{leer\-Monomio} ()
+\begin{DoxyCompactList}\small\item\em Asigna el grado y el coeficiente a un monomio. \end{DoxyCompactList}\item 
+void \hyperlink{classed_1_1Monomio_a42484a47d0d877232ee7775b97b1d480}{escribir\-Monomio} ()
+\begin{DoxyCompactList}\small\item\em Escribe los valores de un monomio por pantalla. \end{DoxyCompactList}\item 
+double \hyperlink{classed_1_1Monomio_a1fef28505a36f4ef961d47ab16281238}{valor\-Monomio} (double x)
+\begin{DoxyCompactList}\small\item\em Calcula el valor de un monomio dado un valor x. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{Indent}{\bf Funciones amigas para poder acceder a la parte privada de Monomio}\par
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classed_1_1Monomio_a35075baf54c0b258250d01e9ebc986b0}{operator$<$$<$} (ostream \&stream, \hyperlink{classed_1_1Monomio}{Monomio} const \&p)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de salida \char`\"{}$<$$<$\char`\"{}. \end{DoxyCompactList}\item 
+istream \& \hyperlink{classed_1_1Monomio_a1fcc0bb6adc11f90e3538f395c99c563}{operator$>$$>$} (istream \&stream, \hyperlink{classed_1_1Monomio}{Monomio} \&p)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de entrada \char`\"{}$>$$>$\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Definición de la clase \hyperlink{classed_1_1Monomio}{Monomio}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classed_1_1Monomio_ac11803dda1ae569b9ca4771187c9610a}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!Monomio@{Monomio}}
+\index{Monomio@{Monomio}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{Monomio}]{\setlength{\rightskip}{0pt plus 5cm}ed\-::\-Monomio\-::\-Monomio (
+\begin{DoxyParamCaption}
+\item[{double}]{coef = {\ttfamily 0.0}, }
+\item[{int}]{grado = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Monomio_ac11803dda1ae569b9ca4771187c9610a}
+
+
+Contructor que crea un monomio a partir del coeficiente y del grado. 
+
+\begin{DoxyAttention}{Attention}
+Función sobrecargada 
+\end{DoxyAttention}
+\begin{DoxyNote}{Note}
+Los parámetros tienen valores por defecto 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em coef} & double, valor por defecto 0.\-0 \\
+\hline
+{\em grado} & int, valor por defecto 0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Ninguna 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{set\-Coeficiente()}, \hyperlink{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{set\-Grado()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Monomio_a29ea5f824f31a241f2479ec40b60f0bd}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!Monomio@{Monomio}}
+\index{Monomio@{Monomio}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{Monomio}]{\setlength{\rightskip}{0pt plus 5cm}ed\-::\-Monomio\-::\-Monomio (
+\begin{DoxyParamCaption}
+\item[{{\bf Monomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Monomio_a29ea5f824f31a241f2479ec40b60f0bd}
+
+
+Contructor que crea un monomio a partir de otro monomio pasado por referencia. 
+
+\begin{DoxyAttention}{Attention}
+Función sobrecargada 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classed_1_1Monomio}{Monomio}, \hyperlink{classed_1_1Monomio}{Monomio} pasado por referencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Ninguna 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{set\-Coeficiente()}, \hyperlink{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{set\-Grado()}, \hyperlink{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{get\-Grado()}, \hyperlink{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{get\-Coeficiente()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classed_1_1Monomio_a42484a47d0d877232ee7775b97b1d480}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!escribir\-Monomio@{escribir\-Monomio}}
+\index{escribir\-Monomio@{escribir\-Monomio}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{escribir\-Monomio}]{\setlength{\rightskip}{0pt plus 5cm}void Monomio\-::escribir\-Monomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Monomio_a42484a47d0d877232ee7775b97b1d480}
+
+
+Escribe los valores de un monomio por pantalla. 
+
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{get\-Grado()}, \hyperlink{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{get\-Coeficiente()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!get\-Coeficiente@{get\-Coeficiente}}
+\index{get\-Coeficiente@{get\-Coeficiente}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{get\-Coeficiente}]{\setlength{\rightskip}{0pt plus 5cm}double ed\-::\-Monomio\-::get\-Coeficiente (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}
+
+
+Devuelve el coeficiente de un monomio. 
+
+\begin{DoxyReturn}{Returns}
+Coeficiente de un monomio 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir anteriormente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{get\-Grado()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1MonomioInterfaz_a8dade5810b660860408169bca4b35e2e}{ed\-::\-Monomio\-Interfaz}.
+
+\hypertarget{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!get\-Grado@{get\-Grado}}
+\index{get\-Grado@{get\-Grado}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{get\-Grado}]{\setlength{\rightskip}{0pt plus 5cm}int ed\-::\-Monomio\-::get\-Grado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}
+
+
+Devuelve el grado de un monomio. 
+
+\begin{DoxyReturn}{Returns}
+Grado de un monomio 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{get\-Coeficiente()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1MonomioInterfaz_aa5b87185650a82784b39b9bbbaec7dcb}{ed\-::\-Monomio\-Interfaz}.
+
+\hypertarget{classed_1_1Monomio_a1d3ec4190c5e23d93eff79ad8e9486c0}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!leer\-Monomio@{leer\-Monomio}}
+\index{leer\-Monomio@{leer\-Monomio}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{leer\-Monomio}]{\setlength{\rightskip}{0pt plus 5cm}void Monomio\-::leer\-Monomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Monomio_a1d3ec4190c5e23d93eff79ad8e9486c0}
+
+
+Asigna el grado y el coeficiente a un monomio. 
+
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{set\-Grado()}, \hyperlink{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{set\-Coeficiente()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Monomio_a91a18ac215d83c32ab2803963441f79d}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Monomio} ed\-::\-Monomio\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Monomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Monomio_a91a18ac215d83c32ab2803963441f79d}
+
+
+Operador producto de dos monomios. 
+
+\begin{DoxyAttention}{Attention}
+Se sobrecarga el operador producto 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classed_1_1Monomio}{Monomio} pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{get\-Grado()}, \hyperlink{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{get\-Coeficiente()}, \hyperlink{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{set\-Grado()}, \hyperlink{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{set\-Coeficiente()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Monomio_a45103846ab828a1d4ff54cd723e14658}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!operator=@{operator=}}
+\index{operator=@{operator=}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Monomio}\& ed\-::\-Monomio\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Monomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classed_1_1Monomio_a45103846ab828a1d4ff54cd723e14658}
+
+
+/name Operadores 
+
+Operador de copia de monomio en otro \begin{DoxyAttention}{Attention}
+Se sobrecarga el operador de asignacion 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classed_1_1Monomio}{Monomio} pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{get\-Grado()}, \hyperlink{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{get\-Coeficiente()}, \hyperlink{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{set\-Grado()}, \hyperlink{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{set\-Coeficiente()} 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!set\-Coeficiente@{set\-Coeficiente}}
+\index{set\-Coeficiente@{set\-Coeficiente}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{set\-Coeficiente}]{\setlength{\rightskip}{0pt plus 5cm}void ed\-::\-Monomio\-::set\-Coeficiente (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{coeficiente}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}
+
+
+Asigna un valor \char`\"{}coeficiente\char`\"{} al coeficiente de un monomio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coeficiente} & double pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{set\-Grado()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1MonomioInterfaz_a40ba6a0dc0940f60842a319f982aac6d}{ed\-::\-Monomio\-Interfaz}.
+
+\hypertarget{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!set\-Grado@{set\-Grado}}
+\index{set\-Grado@{set\-Grado}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{set\-Grado}]{\setlength{\rightskip}{0pt plus 5cm}void ed\-::\-Monomio\-::set\-Grado (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{grado}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classed_1_1Monomio_ae5ff9fdeb412ee9197f5395942d8ef47}
+
+
+Asigna un valor \char`\"{}grado\char`\"{} al grado de un monomio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grado} & int pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a259fcdd7c96549aa053ffb4ac69af07f}{set\-Coeficiente()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classed_1_1MonomioInterfaz_a7294c2a6a1c76ef374202e45f54f1da6}{ed\-::\-Monomio\-Interfaz}.
+
+\hypertarget{classed_1_1Monomio_a1fef28505a36f4ef961d47ab16281238}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!valor\-Monomio@{valor\-Monomio}}
+\index{valor\-Monomio@{valor\-Monomio}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{valor\-Monomio}]{\setlength{\rightskip}{0pt plus 5cm}double Monomio\-::valor\-Monomio (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{classed_1_1Monomio_a1fef28505a36f4ef961d47ab16281238}
+
+
+Calcula el valor de un monomio dado un valor x. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & double \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ninguna 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classed_1_1Monomio_a22fd67c971fbbc239e882a0adc0f3ef2}{get\-Grado()}, \hyperlink{classed_1_1Monomio_a1fa653597b00d3ebf69b26d84949051a}{get\-Coeficiente()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classed_1_1Monomio_a35075baf54c0b258250d01e9ebc986b0}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{stream, }
+\item[{{\bf Monomio} const \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classed_1_1Monomio_a35075baf54c0b258250d01e9ebc986b0}
+
+
+Sobrecarga del operador de salida \char`\"{}$<$$<$\char`\"{}. 
+
+\begin{DoxyAttention}{Attention}
+Funcion amiga de la clase \hyperlink{classed_1_1Monomio}{Monomio} 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & ostream, flujo de salida \\
+\hline
+{\em p} & \hyperlink{classed_1_1Monomio}{Monomio}, pasado por referencia constante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se escribe por pantalla el coeficiente y el grado de un monomio 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+operator $>$$>$ 
+\end{DoxySeeAlso}
+\hypertarget{classed_1_1Monomio_a1fcc0bb6adc11f90e3538f395c99c563}{\index{ed\-::\-Monomio@{ed\-::\-Monomio}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!ed::Monomio@{ed\-::\-Monomio}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{stream, }
+\item[{{\bf Monomio} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classed_1_1Monomio_a1fcc0bb6adc11f90e3538f395c99c563}
+
+
+Sobrecarga del operador de entrada \char`\"{}$>$$>$\char`\"{}. 
+
+\begin{DoxyAttention}{Attention}
+Funcion amiga de la clase \hyperlink{classed_1_1Monomio}{Monomio} 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & istream, flujo de entrada \\
+\hline
+{\em p} & \hyperlink{classed_1_1Monomio}{Monomio}, pasado por referencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+El monomio debe existir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se le asignan los valores coeficiente y grado a un monomio 
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See Also}
+operator $<$$<$ 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+monomio.\-hpp\item 
+monomio.\-cpp\end{DoxyCompactItemize}
