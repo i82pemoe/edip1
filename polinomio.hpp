@@ -187,18 +187,10 @@ class Polinomio:public PolinomioInterfaz{
       m = getPolinomio();
       m2 = p.getPolinomio();
       aux.insert( aux.end(), m.begin(), m.end() );
-
-      // for (int i= 0; i<getTerminos(); i++){
-      //   aux.push_back(getMonomio(i));
-      // }
-
-      // for (int j= 0; j<p.getTerminos(); j++){
-      //   aux.push_back(p.getMonomio(j));
-      // }
       aux.insert( aux.end(), m2.begin(), m2.end() );
 
       vsuma = aux;
-      // vsuma = sumaVector(aux);
+      vsuma = sumaVector(aux);
       psuma.setPolinomio(vsuma);
       psuma.setTerminos(vsuma.size());
       psuma.calcularGrado();

@@ -85,11 +85,21 @@ vector <Monomio> Polinomio::sumaVector(vector <Monomio> &p){
     i++;
   }while (i < tam);
   int tams = suma.size();
-  for (i = 0; i < tams; i++){
-    if (suma[i].getCoeficiente()==0){
+
+  // for (int i = 0; i < suma.size(); i++){
+  //   if (suma[i].getCoeficiente()==0){
+  //     suma.erase(suma.begin()+i);
+  //     i--;
+  //   }
+  // }
+  i = 0;
+  while(i < tams){
+    if(suma[i].getCoeficiente()==0){
       suma.erase(suma.begin()+i);
+      tams --;
       i--;
     }
+    i++;
   }
   return suma;
 }
