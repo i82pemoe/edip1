@@ -116,12 +116,29 @@ ostream &operator << (ostream &stream, Polinomio const &p)
 
   for (int i=0; i < p.getTerminos(); i++){
      stream << p.getMonomio(i);
-     stream << "+";
+     if (i < p.getTerminos()-1){
+         stream << "+";
+     }
   }
   stream << endl;
   return stream;
 }
 
-istream &operator >> (istream &stream, Polinomio &p);
+istream &operator >> (istream &stream, Polinomio &p){
+  int num; //Numero de monomios a introducir;
+  vector <Monomio> vector;
+  Monomio mon;
+
+  std::cout << "Introduzca numero de monomios" << std::endl;
+  stream >> num;
+  for(int i = 0; i < num; i++){
+    stream >> mon;
+    vector.push_back(mon);
+  }
+  p._polinomio = vector;
+  p._terminos = num;
+  p.calcularGrado();
+  return stream;
+}
 
 }

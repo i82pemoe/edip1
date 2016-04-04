@@ -1,7 +1,9 @@
 #include <iostream>
+#include <cstdio>
+#include <string>
 
 #include "monomio.hpp"
-
+#include "macros.hpp"
 
 using namespace ed;
 using namespace std;
@@ -10,6 +12,7 @@ using namespace std;
 int main (void)
 {
   // Monomio con constructor por defecto
+  BORRAR;
   Monomio m1;
 
 
@@ -30,6 +33,17 @@ int main (void)
   cout << "Monomio constructor de copia" << endl;
   m3.escribirMonomio();
 
+  getchar();
+  printf("Pulse ");
+  SUBRAYADO;
+  printf("ENTER");
+  APAGA;
+  printf(" para ");
+  INVERSO;
+  printf("Continuar");
+  APAGA;
+  getchar();
+  BORRAR;
 
   int opcion = 0;
   do{
@@ -49,6 +63,17 @@ int main (void)
         cout << "Introduzca valor de x" << endl;
         cin >> x;
         cout << "El monomio vale: " << m2.valorMonomio(x) << endl;
+        getchar();
+        printf("Pulse ");
+        SUBRAYADO;
+        printf("ENTER");
+        APAGA;
+        printf(" para ");
+        INVERSO;
+        printf("Continuar");
+        APAGA;
+        getchar();
+        BORRAR;
         break;
 
       case 2:
@@ -62,6 +87,17 @@ int main (void)
         p3 = p1*p2;
         cout << "p3 = " << p1 << " * " << p2<< endl;
         cout << "Producto = " << p3 << endl;
+        getchar();
+        printf("Pulse ");
+        SUBRAYADO;
+        printf("ENTER");
+        APAGA;
+        printf(" para ");
+        INVERSO;
+        printf("Continuar");
+        APAGA;
+        getchar();
+        BORRAR;
         break;
     }
   }while(opcion !=0);

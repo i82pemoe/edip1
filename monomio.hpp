@@ -9,7 +9,7 @@
 #include <cmath>
 #include "monomiointerfaz.hpp"
 
-using namespace std;
+
 
 //! \attention Se incluye la clase Monomio dentro del espacio de nombre ed
 namespace ed{
@@ -184,7 +184,7 @@ class Monomio:public MonomioInterfaz {
 			\brief Sobrecarga del operador de entrada ">>"
 			\attention Funcion amiga de la clase Monomio
 			\param stream istream, flujo de entrada
-			\param p Monomio, pasado por referencia 
+			\param p Monomio, pasado por referencia
 			\pre El monomio debe existir
 			\post Se le asignan los valores coeficiente y grado a un monomio
 			\sa operator <<

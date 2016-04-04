@@ -11,7 +11,7 @@ using namespace std;
 namespace ed{
 //! Definición de la clase MonomioInterfaz
 class MonomioInterfaz{
-	//! \name Métodos públicos de la clase Monomio
+	//! \name Métodos públicos de la clase MonomioInterfaz
 	public:
 		/*!
 			\brief Devuelve el coeficiente de un monomio

@@ -10,8 +10,9 @@ var indexSectionsWithContent =
   0: "ceglmopstv",
   1: "mp",
   2: "e",
-  3: "ceglmopstv",
-  4: "o"
+  3: "m",
+  4: "ceglmopstv",
+  5: "o"
 };
 
 var indexSectionNames =
@@ -19,8 +20,9 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "namespaces",
-  3: "functions",
-  4: "related"
+  3: "files",
+  4: "functions",
+  5: "related"
 };
 
 function convertToId(search)

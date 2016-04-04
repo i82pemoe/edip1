@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>My Project: Class List</title>
+<title>My Project: macros.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,8 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -60,13 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li class="current"><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,24 +77,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">Class List</div>  </div>
+<div class="title">macros.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here are the classes, structs, unions and interfaces with brief descriptions:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><img id="arr_0_" src="ftv2mlastnode.png" alt="\" width="16" height="22" onclick="toggleFolder('0_')"/><img src="ftv2ns.png" alt="N" width="24" height="22" /><a class="el" href="namespaceed.html" target="_self">ed</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classed_1_1Monomio.html" target="_self">Monomio</a></td><td class="desc">Definición de la clase <a class="el" href="classed_1_1Monomio.html" title="Definición de la clase Monomio. ">Monomio</a> </td></tr>
-<tr id="row_0_1_" class="even"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classed_1_1MonomioInterfaz.html" target="_self">MonomioInterfaz</a></td><td class="desc">Definición de la clase <a class="el" href="classed_1_1MonomioInterfaz.html" title="Definición de la clase MonomioInterfaz. ">MonomioInterfaz</a> </td></tr>
-<tr id="row_0_2_"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classed_1_1Polinomio.html" target="_self">Polinomio</a></td><td class="desc">Definición de la clase <a class="el" href="classed_1_1Polinomio.html" title="Definición de la clase Polinomio. ">Polinomio</a> </td></tr>
-<tr id="row_0_3_" class="even"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classed_1_1PolinomioInterfaz.html" target="_self">PolinomioInterfaz</a></td><td class="desc">Definición de la clase <a class="el" href="classed_1_1PolinomioInterfaz.html" title="Definición de la clase PolinomioInterfaz. ">PolinomioInterfaz</a> </td></tr>
+
+<p>Macros para el diseño de pantallas.  
+<a href="#details">More...</a></p>
+
+<p><a href="macros_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1e26748f72802cc32341cc3846db931f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e26748f72802cc32341cc3846db931f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LUGAR</b>(x, y)&#160;&#160;&#160;printf(&quot;\033[%d;%dH&quot;,x,y)</td></tr>
+<tr class="separator:a1e26748f72802cc32341cc3846db931f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79bf316fce01e63d76dddcdcbe72ab1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79bf316fce01e63d76dddcdcbe72ab1c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BORRAR</b>&#160;&#160;&#160;printf(&quot;\33[2J&quot;)</td></tr>
+<tr class="separator:a79bf316fce01e63d76dddcdcbe72ab1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86c2fc65d2b4c5205910f548828dcb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab86c2fc65d2b4c5205910f548828dcb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PARPADEO</b>&#160;&#160;&#160;printf(&quot;%c[5m&quot;,27)</td></tr>
+<tr class="separator:ab86c2fc65d2b4c5205910f548828dcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2815fb445b50124864e3f2f958fac24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2815fb445b50124864e3f2f958fac24"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>APAGA</b>&#160;&#160;&#160;printf(&quot;%c[0m&quot;,27)</td></tr>
+<tr class="separator:af2815fb445b50124864e3f2f958fac24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cb5eae7b643f5d13c9d546e81dbcaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6cb5eae7b643f5d13c9d546e81dbcaf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INVERSO</b>&#160;&#160;&#160;printf(&quot;%c[7m&quot;,27)</td></tr>
+<tr class="separator:ac6cb5eae7b643f5d13c9d546e81dbcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab8b4157fd29a2336c702b26a967bb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ab8b4157fd29a2336c702b26a967bb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SUBRAYADO</b>&#160;&#160;&#160;printf(&quot;%c[4m&quot;,27)</td></tr>
+<tr class="separator:a3ab8b4157fd29a2336c702b26a967bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7eea73aeb56d77e1d56471ab214f8e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7eea73aeb56d77e1d56471ab214f8e2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INTENSIDAD</b>&#160;&#160;&#160;printf(&quot;%c[1m&quot;,27)</td></tr>
+<tr class="separator:af7eea73aeb56d77e1d56471ab214f8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Macros para el diseño de pantallas. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 4 2016 09:06:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 4 2016 09:06:36 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

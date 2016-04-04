@@ -10,7 +10,7 @@
 #include <algorithm>
 #include "polinomioInterfaz.hpp"
 
-using namespace std;
+
 //! \attention Se incluye la clase Polinomio dentro del espacio de nombre ed
 namespace ed{
 //! Definición de la clase Polinomio
