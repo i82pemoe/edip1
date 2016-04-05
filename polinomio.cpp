@@ -9,29 +9,28 @@ using namespace ed;
 void Polinomio::leerPolinomio(){
   vector <Monomio> vector;
   Monomio monomio;
-  cout << "Para terminar introducir los valores como 0" << endl;
-  do{
+  int terminos;
+  
+  std::cout << "Introduzca numero de terminos a introducir" << std::endl;
+  std::cin >> terminos;
+  for(int i=0; i < terminos; i++){
     monomio.leerMonomio();
-    if (monomio.getCoeficiente() != 0){
-      vector.push_back(monomio);
-    }
-  }while(monomio.getCoeficiente() !=0 );
+    vector.push_back(monomio);
+  }
 
   setPolinomio(vector);
-  setTerminos(vector.size());
+  setTerminos(terminos);
   calcularGrado();
 
 
 }
 
 void Polinomio::escribirPolinomio(){
-  Monomio aux;
   cout << "Grado: " << getGrado() <<endl;;
   cout << "Terminos: " << getTerminos() << endl;
   cout << "Vector: " ;
   for(int i=0; i < getTerminos(); i++){
-    aux = getMonomio(i);
-    cout << aux;
+    cout << getMonomio(i);
     if (i < getTerminos()-1){
         cout << "+";
     }
